@@ -7,5 +7,5 @@ Feel free to tap or contribute!
 
 [hb]: https://brew.sh/
 [hbf]: http://docs.brew.sh/Formula-Cookbook.html
-[bbc]: https://github.com/Homebrew/homebrew-core
+[hbc]: https://github.com/Homebrew/homebrew-core
 
