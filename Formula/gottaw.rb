@@ -3,7 +3,7 @@ class Gottaw < Formula
   homepage "https://github.com/makii42/gottaw"
   url "https://github.com/makii42/gottaw/archive/v0.0.3.tar.gz"
   sha256 "7da09a64c8bffe837cf3856c22fc025521e359523f1764e21bf13533b0ea8116"
-
+  head "https://github.com/makii42/gottaw.git", :branch => "develop"
   depends_on "go" => :build
 
   def install
