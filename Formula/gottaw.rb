@@ -3,25 +3,30 @@ require "language/go"
 class Gottaw < Formula
   desc "Local command building your code as soon as you save modifications"
   homepage "https://github.com/makii42/gottaw"
-  url "https://github.com/makii42/gottaw/archive/v0.1.0.tar.gz"
-  sha256 "ba08e6a450dcea6dfaa5a26a69a33ce9bb8f5d0dd5a146177c9d1c053ddb34af"
+  url "https://github.com/makii42/gottaw/archive/v0.1.1.tar.gz"
+  sha256 "0dfaf1cb8272899514ac153b0fc62c32ff172a598ebcf578ec46e92da0d44b0f"
   head "https://github.com/makii42/gottaw.git", :branch => "develop"
   
   depends_on "go" => :build
 
   go_resource "github.com/0xAX/notificator" do
     url "https://github.com/0xAX/notificator.git",
-      :revision => "82e921414e037b057d5f9c5c8b9a8313dfa584de"
+      :revision => "6bcea42e61381c13704c7fb6eb2438950f335832"
   end
 
   go_resource "github.com/fatih/color" do
     url "https://github.com/fatih/color.git",
-      :revision => "9131ab34cf20d2f6d83fdc67168a5430d1c7dc23"
+      :revision => "62e9147c64a1ed519147b62a56a14e83e2be02c1"
+  end
+
+  go_resource "golang.org/x/sys" do
+    url "https://go.googlesource.com/sys.git",
+      :revision => "739734461d1c916b6c72a63d7efda2b27edb369f"
   end
 
   go_resource "gopkg.in/fsnotify.v1" do
     url "https://gopkg.in/fsnotify.v1.git",
-      :revision => "875cf421b32f8f1b31bd43776297876d01542279"
+      :revision => "629574ca2a5df945712d3079857300b5e4da0236"
   end
 
   go_resource "gopkg.in/urfave/cli.v1" do
